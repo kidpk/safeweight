@@ -1,0 +1,335 @@
+* {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 0 1px black;
+  
+}
+
+h4 {
+  font-family: cursive;
+  font-size: 30px;
+  text-shadow: black;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.headerLink{
+  color: #FFFFFF;
+}
+
+.headerLink:hover{
+  text-decoration: none;
+  color: #FFFFFF;
+
+}
+
+h4:hover {
+  color: bisque;
+}
+
+
+/* header links  */
+.registerUl {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex: 1 0 21%; */
+    margin: 0px;
+    margin-left: 70%;
+    /* justify-content: flex-end; */
+}
+
+
+
+
+.addOnsh3 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 0 4px black;
+}
+.addOnsh3:hover {
+  color: turquoise;
+}
+.mainNavItems {
+  margin-top: 30px;
+}
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: serif;
+  font-size: 17px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li:hover {
+  background-color: #eee;
+}
+body {
+  background-color: rgb(228, 226, 226);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftNav {
+  padding-left: 20px;
+  width: 150px;
+  height: 145%;
+  background-color: white;
+  position: absolute;
+  box-shadow: darkgray 2px 2px 4px;
+}
+.ContentDiv {
+  margin-left: 150px;
+  width: calc(100% - 210px);
+  height: 100%;
+}
+.firstRow {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 30px;
+}
+.firstColumn {
+  border-radius: 10px;
+  margin-right: 30px;
+  background-color: white;
+  min-height: 300px;
+  width: calc(33% - 30px);
+  box-shadow: darkgray 2px 2px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./images/cardioBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.secondColumn {
+  border-radius: 10px;
+  margin-right: 30px;
+  background-color: white;
+  min-height: 300px;
+  width: 34%;
+  box-shadow: darkgray 2px 2px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./images/resistanceBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.thirdColumn {
+  border-radius: 10px;
+  background-color: white;
+  min-height: 300px;
+  width: calc(33% - 30px);
+  box-shadow: darkgray 2px 2px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./images/yogaBg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  text-align: center;
+}
+
+.SecondRow {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  margin: 30px;
+  display: flex;
+  box-shadow: darkgrey 2px 2px 4px;
+  flex-wrap: wrap;
+}
+
+.cardio-SR {
+  flex: 1 0 21%;
+  margin: 13px;
+  /* height: 100px; */
+  margin-left: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rowNoBG{
+  background-image: none;
+  backface-visibility: hidden;
+}
+.thirdRow {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 300px;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+}
+header {
+  min-height: 45px;
+  padding: 10px;
+  background-color: rgb(68, 68, 192);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: darkgray 2px 2px 4px;
+}
+
+.MenuIcon {
+  margin-left: 10px;
+  position: absolute;
+}
+.defaultIcons {
+  width: 30px;
+  height: 30px;
+}
+#nav-toggle {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+}
+
+#nav-toggle {
+  cursor: pointer;
+  padding: 10px 30px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 2px;
+  height: 4px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 700px) {
+  .ContentDiv {
+    width: calc(100% - 180px);
+    height: 100%;
+  }
+  .firstRow {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .thirdRow {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .firstColumn {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+    min-height: 150px;
+  }
+  .secondColumn {
+    width: 100%;
+    margin-right: 0;
+    min-height: 150px;
+    margin-bottom: 10px;
+  }
+  .thirdColumn {
+    width: 100%;
+    margin-right: 0;
+    min-height: 150px;
+  }
+  .SecondRow {
+    margin: 10px;
+    min-height: 200px;
+  }
+
+  .leftNav {
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .ContentDiv {
+    width: calc(100% - 22px);
+    margin-left: 0;
+    margin-top: 110px;
+  }
+  .mainNavItems li {
+    display: inline-block;
+    margin: 5px;
+  }
+  .mainNavItems {
+    margin: 0;
+  }
+}

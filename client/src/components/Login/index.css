@@ -1,0 +1,22 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+
+
+.btn {
+  background-color: rgb(68, 68, 192);
+}
+
+/* body {
+  background-image: url(/running-573762_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
